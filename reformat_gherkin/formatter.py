@@ -178,7 +178,7 @@ def generate_doc_string_lines(docstring: DocString, indent: str) -> List[str]:
     raw_lines = docstring.content.splitlines()
     raw_lines = ['"""'] + raw_lines + ['"""']
 
-    indent_level = INDENT_LEVEL_MAP[Step]
+    indent_level = INDENT_LEVEL_MAP[TableRow]
 
     return [f"{indent * indent_level}{line}" for line in raw_lines]
 
